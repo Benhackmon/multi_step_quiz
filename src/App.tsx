@@ -13,7 +13,6 @@ const router = createBrowserRouter(
   )
 );
 
-
 const App = () => (
   <Center sx={{ height: 1, width: 1, overflow: 'auto' }}>
     <RouterProvider router={router} />
