@@ -38,7 +38,7 @@ const QuizPage = () => {
             <Typography variant='body1'>{currentQuestion.text}</Typography>
             <RadioGroup value={selectedAnswers[currentQuestionIndex]} onChange={chooseAnswer}>
                 {currentQuestion.answers.map(({ id, text }) => (
-                    <FormControlLabel key={id} value={id} control={<Radio />} label={text} />
+                    <FormControlLabel key={id} value={id} control={<Radio size='small' />} label={text} />
                 ))}
             </RadioGroup>
             <FullRow sx={{ justifyContent: 'space-between' }}>
